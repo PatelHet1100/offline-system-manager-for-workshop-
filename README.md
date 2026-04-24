@@ -1,20 +1,135 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# 🚀 offline-system-manager-for-workshop (Offline-First)
 
-# Run and deploy your AI Studio app
+A fully offline, local-first order management system designed for small workshops and manufacturing businesses.
 
-This contains everything you need to run your app locally.
+This system allows you to track:
+- Customers
+- Orders
+- Payments
+- Images (product references + order-specific)
+- Delivery timelines
+- Financial summaries
 
-View your app in AI Studio: https://ai.studio/apps/164d706c-0520-405b-8bfd-0e649f154c24
+---
 
-## Run Locally
+## 🧠 Core Philosophy
 
-**Prerequisites:**  Node.js
+Your data stays on your computer. No cloud. No subscriptions. Full control.
 
+---
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## ✨ Features
+
+### 📋 Order Management
+- Create, edit, and delete orders
+- Multiple orders per customer
+- Full edit support
+
+### 🧾 Structured Order Details
+- Description
+- Measurements
+- Materials / Patterns
+- Special instructions
+
+### 🖼️ Smart Image System
+- Shared product images across customers
+- Order-specific images
+- Central gallery with search
+- Manual image deletion only
+
+### 💰 Financial Tracking
+- Tracks only paid amount
+- Supports partial payments
+- Customer-wise breakdown
+
+### ⏱️ Delivery & Urgency System
+- Delivery date tracking
+- Auto urgency detection:
+  - Normal
+  - Urgent (≤ 2 days)
+  - Critical (overdue)
+
+### 💾 Backup System
+- Export full backup (DB + images)
+- Fully offline storage
+
+---
+
+## 🧰 Tech Stack
+
+- Backend: Node.js + Express
+- Frontend: React + Vite + Tailwind
+- Database: SQLite
+- Storage: Local filesystem
+
+---
+
+## 📦 Installation
+
+See: docs/INSTALLATION.md
+
+---
+
+## ▶️ Usage
+
+Run:
+
+npm install  
+npm run dev  
+
+OR:
+
+Double-click:
+
+scripts/start-app.bat
+
+---
+
+## 💾 Data Storage
+
+/data/
+   workshop.db
+   /images/
+
+Do NOT delete these files manually.
+
+---
+
+## 🔐 Data Safety
+
+- No cloud usage
+- No external APIs
+- Full local control
+
+---
+
+## 🧪 Status
+
+Production-ready for single-device use
+
+---
+
+## 📈 Future Roadmap
+
+- Multi-device sync
+- Desktop app (.exe)
+- Analytics dashboard
+- Auto-backup system
+
+---
+
+## 🤖 AI Reproducibility
+
+See: docs/AI_PROMPTS.md
+
+---
+
+## 📄 License
+
+MIT
+
+---
+
+## ⚡ Philosophy
+
+Build systems that solve real problems — not just code that runs.
