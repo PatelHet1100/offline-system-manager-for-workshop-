@@ -1,0 +1,6 @@
+{
+  "name": "Workshop Order Tracker TGB 3",
+  "description": "An offline-first order tracking system for workshops with WhatsApp-inspired UI, SQLite storage, and product-based image grouping.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
